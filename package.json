@@ -1,5 +1,12 @@
 {
   "dependencies": {
     "express": "^4.16.4"
-  }
+  },
+  "name": "atube",
+  "version": "1.0.0",
+  "description": "Cloning Youtube with Vanilla and NodeJS",
+  "main": "index.js",
+  "repository": "https://github.com/donggyushin/atube.git",
+  "author": "rontend",
+  "license": "MIT"
 }
