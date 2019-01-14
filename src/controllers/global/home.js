@@ -1,5 +1,5 @@
 const home = (req, res) => {
-  res.send("home");
+  res.render("routes/Home/home.ejs");
 };
 
 export default home;

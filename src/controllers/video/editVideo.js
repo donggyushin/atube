@@ -1,4 +1,4 @@
 const editVideo = (req, res) => {
-  return res.send("edit video");
+  res.render("routes/EditVideo/editVideo.ejs");
 };
 export default editVideo;

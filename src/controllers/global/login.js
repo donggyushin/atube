@@ -1,5 +1,5 @@
 const login = (req, res) => {
-  return res.send("login");
+  res.render("routes/Login/login.ejs");
 };
 
 export default login;

@@ -1,5 +1,5 @@
 const videoDetail = (req, res) => {
-  return res.send("video detail");
+  res.render("routes/VideoDetail/videoDetail.ejs");
 };
 
 export default videoDetail;

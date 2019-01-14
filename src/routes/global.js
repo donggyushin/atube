@@ -10,9 +10,9 @@ import search from "../controllers/global/search";
 const globalRouter = express.Router();
 
 globalRouter.get(routes.home, home);
-globalRouter.post(routes.join, join);
-globalRouter.post(routes.logout, logout);
-globalRouter.post(routes.login, login);
+globalRouter.get(routes.join, join);
+globalRouter.get(routes.logout, logout);
+globalRouter.get(routes.login, login);
 globalRouter.get(routes.search, search);
 
 export default globalRouter;

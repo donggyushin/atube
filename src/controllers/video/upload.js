@@ -1,5 +1,5 @@
 const upload = (req, res) => {
-  return res.send("upload");
+  res.render("routes/Upload/upload.ejs");
 };
 
 export default upload;

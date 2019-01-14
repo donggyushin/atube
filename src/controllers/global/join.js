@@ -1,5 +1,5 @@
 const join = (req, res) => {
-  return res.send("join");
+  res.render("routes/Join/join.ejs");
 };
 
 export default join;

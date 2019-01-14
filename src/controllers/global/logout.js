@@ -1,5 +1,5 @@
 const logout = (req, res) => {
-  return res.send("logout");
+  res.render("routes/Logout/logout.ejs");
 };
 
 export default logout;

@@ -1,5 +1,5 @@
 const search = (req, res) => {
-  return res.send("search");
+  res.render("routes/Search/search.ejs");
 };
 
 export default search;

@@ -1,5 +1,5 @@
 const deleteVideo = (req, res) => {
-  return res.send("delete video");
+  res.render("routes/DeleteVideo/deleteVideo.ejs");
 };
 
 export default deleteVideo;

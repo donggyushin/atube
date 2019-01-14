@@ -1,5 +1,5 @@
 const editProfile = (req, res) => {
-  return res.send("edit profile");
+  res.render("routes/EditProfile/editProfile.ejs");
 };
 
 export default editProfile;

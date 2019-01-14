@@ -1,5 +1,5 @@
 const userDetail = (req, res) => {
-  return res.send("user detail");
+  res.render("routes/UserDetail/userDetail.ejs");
 };
 
 export default userDetail;

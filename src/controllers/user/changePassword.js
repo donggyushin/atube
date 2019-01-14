@@ -1,5 +1,5 @@
 const changePassword = (req, res) => {
-  return res.send("change password");
+  res.render("routes/ChangePassword/changePassword.ejs");
 };
 
 export default changePassword;
