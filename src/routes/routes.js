@@ -1,3 +1,9 @@
+//Routes
+
+const MAIN = "/";
+const USER = "/user";
+const VIDEO = "/video";
+
 // global
 
 const HOME = "/";
@@ -22,6 +28,9 @@ const EDIT_VIDEO = "/:id/edit";
 const DELETE_VIDEO = "/:id/delete";
 
 const routes = {
+  main: MAIN,
+  user: USER,
+  video: VIDEO,
   home: HOME,
   join: JOIN,
   logout: LOGOUT,
