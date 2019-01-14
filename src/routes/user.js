@@ -1,10 +1,8 @@
 import express from "express";
+import { handleUserContoller } from "../controllers/user";
 
 const userRouter = express.Router();
 
-const handleUserRoute = (req, res) => {
-  res.send("user");
-};
-userRouter.get("/", handleUserRoute);
+userRouter.get("/", handleUserContoller);
 
 export default userRouter;
