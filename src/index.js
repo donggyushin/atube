@@ -1,12 +1,20 @@
 import express from "express";
+import morgan from "morgan";
+import helmet from "helmet";
+import bodyParser from "body-parser";
+import cookieParser from "cookie-parser";
+
+const jsonParser = bodyParser.json();
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
+
 const app = express();
 const PORT = 3000;
 
-const middlewareTestFN = (req, res, next) => {
-  console.log("middleware");
-  next();
-};
-app.use(middlewareTestFN);
+app.use(morgan("dev"));
+app.use(helmet());
+app.use(jsonParser);
+app.use(urlencodedParser);
+app.use(cookieParser());
 
 const handleListening = port => {
   console.log(`A-tube app listening on port ${port}`);
