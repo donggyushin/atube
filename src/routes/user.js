@@ -1,12 +1,13 @@
 import express from "express";
-import { handleUserContoller } from "../controllers/user";
+
 import routes from "./routes";
+import { userTestController } from "../controllers/user/test";
 
 const userRouter = express.Router();
 
-userRouter.get(routes.users, handleUserContoller);
-userRouter.get(routes.userDetail, handleUserContoller);
-userRouter.put(routes.editProfile, handleUserContoller);
-userRouter.put(routes.changePassword, handleUserContoller);
+userRouter.get(routes.users, userTestController);
+userRouter.get(routes.userDetail, userTestController);
+userRouter.put(routes.editProfile, userTestController);
+userRouter.put(routes.changePassword, userTestController);
 
 export default userRouter;

@@ -1,13 +1,14 @@
 import express from "express";
-import { handleHomeControler } from "../controllers/global";
+
 import routes from "./routes";
+import { globalTest } from "../controllers/global/test";
 
 const globalRouter = express.Router();
 
-globalRouter.get(routes.home, handleHomeControler);
-globalRouter.post(routes.join, handleHomeControler);
-globalRouter.post(routes.logout, handleHomeControler);
-globalRouter.post(routes.login, handleHomeControler);
-globalRouter.get(routes.search, handleHomeControler);
+globalRouter.get(routes.home, globalTest);
+globalRouter.post(routes.join, globalTest);
+globalRouter.post(routes.logout, globalTest);
+globalRouter.post(routes.login, globalTest);
+globalRouter.get(routes.search, globalTest);
 
 export default globalRouter;
