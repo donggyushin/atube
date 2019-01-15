@@ -1,5 +1,9 @@
 const home = (req, res) => {
-  res.render("routes/Home/home.ejs");
+  const local = {
+    pageTitle: "HOME"
+  };
+
+  res.render("routes/Home/home.ejs", local);
 };
 
 export default home;

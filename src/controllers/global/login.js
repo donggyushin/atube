@@ -1,5 +1,8 @@
 const login = (req, res) => {
-  res.render("routes/Login/login.ejs");
+  const local = {
+    pageTitle: "Login"
+  };
+  res.render("routes/Login/login.ejs", local);
 };
 
 export default login;

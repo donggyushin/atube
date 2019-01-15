@@ -1,5 +1,8 @@
 const join = (req, res) => {
-  res.render("routes/Join/join.ejs");
+  const local = {
+    pageTitle: "JOIN"
+  };
+  res.render("routes/Join/join.ejs", local);
 };
 
 export default join;
