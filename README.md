@@ -9,7 +9,7 @@ simple video sharing page
 - [x] Login
 - [x] Search
 - [ ] User Detail
-- [ ] Edit profile
+- [x] Edit profile
 - [ ] Change Password
 - [ ] Upload
 - [ ] Video Detail
