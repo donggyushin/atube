@@ -4,6 +4,7 @@ import helmet from "helmet";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import Router from "./routes/index";
+import { localVariables } from "./middlewares";
 
 const jsonParser = bodyParser.json();
 const urlencodedParser = bodyParser.urlencoded({ extended: true });
@@ -15,6 +16,10 @@ app.use(helmet());
 app.use(jsonParser);
 app.use(urlencodedParser);
 app.use(cookieParser());
+
+app.use(localVariables);
+
+//routing
 app.use("/", Router);
 
 // set the view engine to ejs
