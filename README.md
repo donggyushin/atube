@@ -4,9 +4,9 @@ simple video sharing page
 
 ## page
 
-- [ ] Home
-- [ ] Join
-- [ ] Login
+- [x] Home
+- [x] Join
+- [x] Login
 - [x] Search
 - [ ] User Detail
 - [ ] Edit profile

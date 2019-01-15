@@ -17,7 +17,15 @@
 
   <body>
     <header><% include ../../components/Header/header %></header>
-    login
+    <div class="login__container">
+      <form action="/login" method="POST">
+        <input type="email" placeholder="Email" name="email" />
+        <input type="password" name="password" placeholder="Password" />
+        <input type="submit" value="LOGIN" />
+      </form>
+
+      <% include ../../components/SocialLoginButton/socialLoginButton %>
+    </div>
     <footer><% include ../../components/Footer/footer %></footer>
   </body>
 </html>
