@@ -1,5 +1,8 @@
 const changePassword = (req, res) => {
-  res.render("routes/ChangePassword/changePassword.ejs");
+  const local = {
+    pageTitle: "update password"
+  };
+  res.render("routes/ChangePassword/changePassword.ejs", local);
 };
 
 export default changePassword;

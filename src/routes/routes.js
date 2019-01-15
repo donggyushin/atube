@@ -19,13 +19,13 @@ const USER_DETAIL = "/:id";
 const EDIT_PROFILE = "/edit-profile";
 const CHANGE_PASSWORD = "/change-password";
 
-//videos
+//video
 
 const VIDEOS = "/videos";
 const UPLOAD = "/upload";
-const VIDEO_DETAIL = "/:id";
 const EDIT_VIDEO = "/:id/edit";
 const DELETE_VIDEO = "/:id/delete";
+const VIDEO_DETAIL = "/:id";
 
 const routes = {
   main: MAIN,

@@ -1,4 +1,11 @@
 const editVideo = (req, res) => {
-  res.render("routes/EditVideo/editVideo.ejs");
+  const {
+    params: { id }
+  } = req;
+  const local = {
+    pageTitle: "Edit video",
+    id
+  };
+  res.render("routes/EditVideo/editVideo.ejs", local);
 };
 export default editVideo;
