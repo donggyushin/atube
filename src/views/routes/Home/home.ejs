@@ -16,7 +16,11 @@
   </head>
   <body>
     <header><% include ../../components/Header/header %></header>
-    <h1>Video...</h1>
+    <ul>
+      <% videos.forEach((video) => {%>
+      <li><%=video.title%></li>
+      <%} ); %>
+    </ul>
     <footer><% include ../../components/Footer/footer %></footer>
   </body>
 </html>
