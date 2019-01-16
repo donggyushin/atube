@@ -6,12 +6,32 @@
     <title>main</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
     <script src="main.js"></script>
   </head>
 
   <body>
     <header><% include ../../components/Header/header %></header>
-    upload
+    <div class="upload">
+      <form action="/video/upload" method="POST">
+        <label for="file">Video File</label>
+        <input type="file" name="file" id="file" />
+        <input type="text" name="title" placeholder="Title" />
+        <textarea
+          name="description"
+          id="description"
+          cols="30"
+          placeholder="Description"
+          rows="10"
+        ></textarea>
+        <input type="submit" value="submit" />
+      </form>
+    </div>
     <footer><% include ../../components/Footer/footer %></footer>
   </body>
 </html>

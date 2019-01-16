@@ -18,7 +18,7 @@
   <body>
     <header><% include ../../components/Header/header %></header>
     <div class="editVideo">
-      <form action="/video/<%=id%>edit" method="POST">
+      <form action="/video/<%=id%>/edit" method="POST">
         <input type="text" name="title" placeholder="Title" />
         <input type="text" name="description" placeholder="Description" />
         <input type="submit" value="Edit Video" />
