@@ -17,7 +17,12 @@
 
   <body>
     <header><% include ../../components/Header/header %></header>
-    search for: <%=searchBy%>
+    <span> search for: <%=searchBy%> </span>
+    <div class="search-videos-container">
+      <% videos.forEach((video) => {%> <%-
+      include('../../components/VideoBlock/videoBlock.ejs', {video:video})%> <%}
+      ); %>
+    </div>
     <footer><% include ../../components/Footer/footer %></footer>
   </body>
 </html>

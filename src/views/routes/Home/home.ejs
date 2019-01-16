@@ -16,11 +16,11 @@
   </head>
   <body>
     <header><% include ../../components/Header/header %></header>
-    <ul>
+    <div class="home-videos-container">
       <% videos.forEach((video) => {%> <%-
       include('../../components/VideoBlock/videoBlock.ejs', {video:video})%> <%}
       ); %>
-    </ul>
+    </div>
     <footer><% include ../../components/Footer/footer %></footer>
   </body>
 </html>
