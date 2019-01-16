@@ -17,9 +17,9 @@
   <body>
     <header><% include ../../components/Header/header %></header>
     <ul>
-      <% videos.forEach((video) => {%>
-      <li><%=video.title%></li>
-      <%} ); %>
+      <% videos.forEach((video) => {%> <%-
+      include('../../components/VideoBlock/videoBlock.ejs', {video:video})%> <%}
+      ); %>
     </ul>
     <footer><% include ../../components/Footer/footer %></footer>
   </body>
