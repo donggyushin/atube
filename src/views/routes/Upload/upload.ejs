@@ -20,8 +20,8 @@
     <div class="upload">
       <form action="/video/upload" method="POST">
         <label for="file">Video File</label>
-        <input type="file" name="file" id="file" />
-        <input type="text" name="title" placeholder="Title" />
+        <input type="file" name="file" id="file" required="true" />
+        <input type="text" name="title" placeholder="Title" required="true" />
         <textarea
           name="description"
           id="description"

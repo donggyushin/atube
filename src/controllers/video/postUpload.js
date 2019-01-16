@@ -1,5 +1,7 @@
 const postUpload = (req, res) => {
-  console.log(req.body);
+  const {
+    body: { file, title, description }
+  } = req;
   // To Do : Upload and save video
   res.redirect("/video/123123");
 };
