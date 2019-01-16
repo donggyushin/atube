@@ -8,7 +8,15 @@
     </form>
   </div>
   <div class="header__column">
+    <% if(user.isAuthenticated){ %>
+    <a href="/video/upload"><span class="header__right__span">Upload</span></a>
+    <a href="/user/<%=user.id%>"
+      ><span class="header__right__span">Profile</span></a
+    >
+    <a href="/logout"><span class="header__right__span">Logout</span></a
+    ><% }else { %>
+
     <a href="/join"><span class="header__right__span">Join</span></a>
-    <a href="/login"><span class="header__right__span">Login</span></a>
+    <a href="/login"><span class="header__right__span">Login</span></a> <% } %>
   </div>
 </div>
