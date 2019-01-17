@@ -17,7 +17,13 @@
 
   <body>
     <header><% include ../../components/Header/header %></header>
-    video detail
+    <div class="videoDetail">
+      <video src="/<%=video.fileURL%>" controls></video>
+      <a href="/video/<%=video.id%>/edit">edit video</a>
+      <div><%=video.views%> views</div>
+      <h4><%=video.title%></h4>
+      <h6><%=video.description%></h6>
+    </div>
     <footer><% include ../../components/Footer/footer %></footer>
   </body>
 </html>
