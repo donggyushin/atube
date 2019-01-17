@@ -1,7 +1,9 @@
 import app from "./app";
 import "./mongoDB";
+import dotenv from "dotenv";
+dotenv.config();
 
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 const handleListeningPort = () => {
   console.log(`✅   Atube server listening on port ${PORT}`);

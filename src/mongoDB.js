@@ -1,6 +1,15 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
+const mongooseURL = process.env.MONGO_URL;
 
-mongoose.connect("mongodb://localhost/a-tube");
+mongoose.connect(
+  mongooseURL,
+  {
+    useNewUrlParser: true,
+    useFindAndModify: false
+  }
+);
 
 const db = mongoose.connection;
 
