@@ -1,4 +1,6 @@
 import routes from "./routes/routes";
+import multer from "multer";
+const upload = multer({ dest: "uploads/videos/" });
 
 export const localVariables = (req, res, next) => {
   res.locals.routes = routes;
@@ -8,3 +10,5 @@ export const localVariables = (req, res, next) => {
   };
   next();
 };
+
+export const singleVideoMiddleware = upload.single("file");

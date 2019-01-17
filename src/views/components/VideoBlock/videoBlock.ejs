@@ -1,11 +1,6 @@
 <div class="videoblock">
   <a href="/video/<%=video.id%>">
-    <iframe
-      src="<%=video.videoFile%>"
-      width="300"
-      height="230"
-      frameborder="0"
-    ></iframe>
+    <video src="<%=video.fileURL%>" width="300"></video>
     <h4><%=video.title%></h4>
     <h6>views: <%=video.views%></h6>
   </a>

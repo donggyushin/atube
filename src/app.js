@@ -16,6 +16,7 @@ app.use(helmet());
 app.use(jsonParser);
 app.use(urlencodedParser);
 app.use(cookieParser());
+app.use("/uploads", express.static("uploads"));
 
 app.use(localVariables);
 
