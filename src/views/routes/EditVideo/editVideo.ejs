@@ -19,8 +19,21 @@
     <header><% include ../../components/Header/header %></header>
     <div class="editVideo">
       <form action="/video/<%=id%>/edit" method="POST">
-        <input type="text" name="title" placeholder="Title" />
-        <input type="text" name="description" placeholder="Description" />
+        <input
+          type="text"
+          name="title"
+          placeholder="Title"
+          value="<%=video.title%>"
+        />
+        <textarea
+          name="description"
+          placeholder="Description"
+          id=""
+          cols="30"
+          rows="10"
+        >
+          <%=video.description%>
+        </textarea>
         <input type="submit" value="Edit Video" />
       </form>
       <a href="/video/<%=id%>/delete">Delete Video</a>
