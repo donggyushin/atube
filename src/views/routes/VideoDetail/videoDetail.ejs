@@ -23,6 +23,10 @@
       <div><%=video.views%> views</div>
       <h4><%=video.title%></h4>
       <h6><%=video.description%></h6>
+      <div class="videoDetail-comments-num">
+        <%if(video.comments.length === 1){%> <span>1 comments</span> <%}else {%>
+        <span><%=video.comments.length%> comments</span> <%}%>
+      </div>
     </div>
     <footer><% include ../../components/Footer/footer %></footer>
   </body>

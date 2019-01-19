@@ -17,7 +17,11 @@
 
   <body>
     <header><% include ../../components/Header/header %></header>
-    <span> search for: <%=searchBy%> </span>
+    <span> search for: <%=searchBy%> </span> <% if( videos.length === 0 ){%>
+    <span class="no-found-span"
+      >Sorry, we couldn't find videos with '<%=searchBy%>'</span
+    >
+    <% } %>
     <div class="search-videos-container">
       <% videos.forEach((video) => {%> <%-
       include('../../components/VideoBlock/videoBlock.ejs', {video:video})%> <%}
