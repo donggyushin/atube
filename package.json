@@ -29,7 +29,7 @@
   "author": "rontend",
   "license": "MIT",
   "scripts": {
-    "dev:server": "nodemon --exec babel-node src/init.js --delay 2",
+    "dev:server": "nodemon --exec babel-node src/init.js --delay 2 --ignore 'scss'",
     "dev:assets": "webpack -w --mode=development",
     "build:assets": "webpack --mode=production"
   },

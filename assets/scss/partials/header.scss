@@ -1,4 +1,5 @@
 .header {
+  margin-bottom: 47px;
   display: flex;
   height: 57px;
   align-items: center;
@@ -43,6 +44,10 @@
       span {
         color: rgba(0, 0, 0, 0.5);
         margin-right: 5px;
+        transition: 0.2s ease-in-out;
+        &:hover {
+          font-weight: 600;
+        }
       }
     }
   }
