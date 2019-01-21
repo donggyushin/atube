@@ -17,7 +17,7 @@ app.use(jsonParser);
 app.use(urlencodedParser);
 app.use(cookieParser());
 app.use("/uploads", express.static("uploads"));
-
+app.use("/static", express.static("static"));
 app.use(localVariables);
 
 //routing

@@ -1,13 +1,13 @@
 <div class="header">
-  <div class="header__column">
-    <a href="/"> <i class="fab fa-youtube"></i> </a>
+  <div class="header__column1">
+    <a href="/"> <i class="fab fa-youtube"></i> <span>ATube</span> </a>
   </div>
-  <div class="header__column">
+  <div class="header__column2">
     <form action="/search" method="GET">
-      <input type="text" name="term" placeholder="search by term" />
+      <input type="text" name="term" placeholder="Search" />
     </form>
   </div>
-  <div class="header__column">
+  <div class="header__column3">
     <% if(user.isAuthenticated){ %>
     <a href="/video/upload"><span class="header__right__span">Upload</span></a>
     <a href="/user/<%=user.id%>"
