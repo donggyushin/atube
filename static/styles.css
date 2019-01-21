@@ -145,10 +145,11 @@ body {
   height: 100%; }
 
 body {
-  background-color: #f5f5f5;
+  background-color: white;
   color: #444444;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  min-height: 70vh; }
 
 main {
   width: 100%;
@@ -283,7 +284,7 @@ main {
       background-color: #353b48;
       margin-bottom: 3px; }
     .socialLogin button:nth-child(2) {
-      background-color: #00a8ff; }
+      background-color: #3b5998; }
 
 .join__container {
   width: 100%;
@@ -303,7 +304,8 @@ main {
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  min-height: 70vh; }
   .join__container form {
     width: 50%;
     display: -webkit-box;
@@ -354,7 +356,8 @@ main {
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  min-height: 70vh; }
   .login__container form {
     width: 50%;
     display: -webkit-box;
@@ -386,3 +389,56 @@ main {
            -moz-border-radius: 5px;
                 border-radius: 5px;
         margin-bottom: 45px; }
+
+.videoDetail {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .videoDetail .description {
+    width: 707px;
+    color: black; }
+    .videoDetail .description .title {
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-top: 35px; }
+    .videoDetail .description .views {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.6);
+      margin-top: 15px; }
+    .videoDetail .description .button-container {
+      text-align: right; }
+      .videoDetail .description .button-container .button {
+        width: 127px;
+        height: 35px;
+        background-color: red;
+        color: white;
+        border: 0;
+        font-size: 1rem;
+        font-weight: 100;
+        margin-bottom: 7px; }
+    .videoDetail .description .description-container {
+      border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+      padding-bottom: 17px;
+      padding-top: 17px;
+      min-height: 133px;
+      margin-bottom: 30px; }
+    .videoDetail .description .videoDetail-comments-num {
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-bottom: 17px; }
