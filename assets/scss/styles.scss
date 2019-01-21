@@ -1,5 +1,10 @@
 @import "config/variables";
 @import "config/reset.scss";
+
 @import "main.scss";
+
 @import "partials/header.scss";
 @import "partials/bottom.scss";
+@import "partials/socialLoginButton.scss";
+
+@import "pages/join.scss";
