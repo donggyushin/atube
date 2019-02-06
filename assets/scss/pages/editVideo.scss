@@ -1,0 +1,63 @@
+.editVideo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+  form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title-input {
+      width: 100%;
+      font-size: 1rem;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      background-color: rgba($color: #000000, $alpha: 0.03);
+    }
+
+    .description-textarea {
+      width: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.03);
+      border-radius: 10px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      border: 0;
+      height: 92px;
+      resize: none;
+      margin-bottom: 20px;
+    }
+
+    .edit-video-button {
+      padding: 10px;
+      width: 100%;
+      border-radius: 10px;
+      background-color: red;
+      color: white;
+      font-size: 1rem;
+    }
+  }
+
+  .delete-video-button-container {
+    width: 400px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1rem;
+    margin-top: 15px;
+    button {
+      background-color: transparent;
+      border: 0;
+      font-size: 1rem;
+      color: white;
+    }
+  }
+}

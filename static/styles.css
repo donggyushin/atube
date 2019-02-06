@@ -286,6 +286,12 @@ main {
     .socialLogin button:nth-child(2) {
       background-color: #3b5998; }
 
+.videoblock {
+  margin-bottom: 110px; }
+  .videoblock video {
+    width: 251px;
+    height: 161px; }
+
 .join__container {
   width: 100%;
   display: -webkit-box;
@@ -442,3 +448,207 @@ main {
       font-size: 1.1rem;
       font-weight: 400;
       margin-bottom: 17px; }
+
+.editVideo {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px; }
+  .editVideo form {
+    width: 400px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .editVideo form .title-input {
+      width: 100%;
+      font-size: 1rem;
+      padding: 10px;
+      margin-bottom: 20px;
+      -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+              border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.03); }
+    .editVideo form .description-textarea {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.03);
+      -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+              border-radius: 10px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      border: 0;
+      height: 92px;
+      resize: none;
+      margin-bottom: 20px; }
+    .editVideo form .edit-video-button {
+      padding: 10px;
+      width: 100%;
+      -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+              border-radius: 10px;
+      background-color: red;
+      color: white;
+      font-size: 1rem; }
+  .editVideo .delete-video-button-container {
+    width: 400px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1rem;
+    margin-top: 15px; }
+    .editVideo .delete-video-button-container button {
+      background-color: transparent;
+      border: 0;
+      font-size: 1rem;
+      color: white; }
+
+.EditProfile {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 200px; }
+  .EditProfile form {
+    width: 400px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .EditProfile form .file-selector {
+      -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+         -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+              box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+      margin-top: 7px;
+      padding: 7px;
+      -webkit-border-radius: 7px;
+         -moz-border-radius: 7px;
+              border-radius: 7px; }
+    .EditProfile form .name-input {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.03);
+      padding: 8px;
+      font-size: 1rem;
+      margin-top: 20px;
+      -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+              border-radius: 10px; }
+    .EditProfile form .update-button {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: red;
+      color: white;
+      font-size: 1rem;
+      -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+              border-radius: 10px; }
+  .EditProfile .change-password-button {
+    width: 400px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #3498db;
+    margin-top: 20px;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px; }
+
+.home-videos-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 1000px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.home-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }

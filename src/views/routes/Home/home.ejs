@@ -16,10 +16,16 @@
   </head>
   <body>
     <header><% include ../../components/Header/header %></header>
-    <div class="home-videos-container">
-      <% videos.forEach((video) => {%> <%-
-      include('../../components/VideoBlock/videoBlock.ejs', {video:video})%> <%}
-      ); %>
+
+    <div class="home-container">
+      <div class="home-videos-container">
+        <% videos.forEach((video) => {%> <%-
+        include('../../components/VideoBlock/videoBlock.ejs', {video:video})%>
+        <%- include('../../components/VideoBlock/videoBlock.ejs',
+        {video:video})%> <%-
+        include('../../components/VideoBlock/videoBlock.ejs', {video:video})%>
+        <%} ); %>
+      </div>
     </div>
     <footer><% include ../../components/Footer/footer %></footer>
     <script src="/static/main.js"></script>

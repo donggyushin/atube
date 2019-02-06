@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title><%=pageTitle%></title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/static/styles.css"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -24,6 +29,7 @@
           name="title"
           placeholder="Title"
           value="<%=video.title%>"
+          class="title-input"
         />
         <textarea
           name="description"
@@ -31,12 +37,17 @@
           id=""
           cols="30"
           rows="10"
+          class="description-textarea"
         >
           <%=video.description%>
         </textarea>
-        <input type="submit" value="Edit Video" />
+        <input type="submit" class="edit-video-button" value="Edit Video" />
       </form>
-      <a href="/video/<%=id%>/delete">Delete Video</a>
+      <a href="/video/<%=id%>/delete" class="delete-video-button-container">
+        <button>
+          Delete Video
+        </button>
+      </a>
     </div>
     <footer><% include ../../components/Footer/footer %></footer>
   </body>
