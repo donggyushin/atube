@@ -4,20 +4,37 @@ import helmet from "helmet";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import Router from "./routes/index";
+import passport from "passport";
+import session from "express-session";
 import { localVariables } from "./middlewares";
+import dotenv from "dotenv";
+dotenv.config();
+import "./passport";
 
 const jsonParser = bodyParser.json();
 const urlencodedParser = bodyParser.urlencoded({ extended: true });
 
 const app = express();
 
+console.log(process.env.SESSION_SECRET_KEY);
+
 app.use(morgan("dev"));
 app.use(helmet());
+app.use(cookieParser());
 app.use(jsonParser);
 app.use(urlencodedParser);
-app.use(cookieParser());
 app.use("/uploads", express.static("uploads"));
 app.use("/static", express.static("static"));
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET_KEY,
+    resave: true,
+    saveUninitialized: false,
+    cookie: {}
+  })
+);
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(localVariables);
 
 //routing

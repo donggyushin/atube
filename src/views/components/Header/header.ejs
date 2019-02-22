@@ -8,7 +8,7 @@
     </form>
   </div>
   <div class="header__column3">
-    <% if(user.isAuthenticated){ %>
+    <% if(user){ %>
     <a href="/video/upload"><span class="header__right__span">Upload</span></a>
     <a href="/user/<%=user.id%>"
       ><span class="header__right__span">Profile</span></a

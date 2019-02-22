@@ -1,9 +1,11 @@
 import app from "./app";
 import "./mongoDB";
 import dotenv from "dotenv";
+dotenv.config();
+
 import "./models/Video";
 import "./models/Comment";
-dotenv.config();
+import "./models/User";
 
 const PORT = process.env.PORT;
 
