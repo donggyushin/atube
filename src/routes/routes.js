@@ -27,6 +27,11 @@ const EDIT_VIDEO = "/:id/edit";
 const DELETE_VIDEO = "/:id/delete";
 const VIDEO_DETAIL = "/:id";
 
+// Github
+
+const GITHUB = "/auth/github";
+const GITHUB_CALLBACK = "/auth/github/callback";
+
 const routes = {
   main: MAIN,
   user: USER,
@@ -44,7 +49,9 @@ const routes = {
   upload: UPLOAD,
   videoDetail: VIDEO_DETAIL,
   editVideo: EDIT_VIDEO,
-  deleteVideo: DELETE_VIDEO
+  deleteVideo: DELETE_VIDEO,
+  gitHub: GITHUB,
+  gitHubCallback: GITHUB_CALLBACK
 };
 
 export default routes;

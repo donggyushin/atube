@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>main</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="/static/styles.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -17,7 +17,8 @@
 
   <body>
     <header><% include ../../components/Header/header %></header>
-    user detail
+    <img src="<%=foundUser.avataUrl%>" />
+    <h4><%=foundUser.name%></h4>
     <footer><% include ../../components/Footer/footer %></footer>
   </body>
 </html>

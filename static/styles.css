@@ -272,19 +272,21 @@ main {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .socialLogin button {
-    width: 50%;
-    text-align: left;
-    height: 40px;
-    font-size: 1rem;
-    padding-left: 20px;
-    border: 0;
-    color: white; }
-    .socialLogin button:first-child {
-      background-color: #353b48;
-      margin-bottom: 3px; }
-    .socialLogin button:nth-child(2) {
-      background-color: #3b5998; }
+  .socialLogin .socialLogin-button2 {
+    background-color: #3b5998; }
+  .socialLogin .socialLogin-button {
+    background-color: #353b48;
+    margin-bottom: 3px; }
+  .socialLogin a {
+    width: 50%; }
+    .socialLogin a button {
+      width: 100%;
+      text-align: left;
+      height: 40px;
+      font-size: 1rem;
+      padding-left: 20px;
+      border: 0;
+      color: white; }
 
 .videoblock {
   margin-bottom: 110px; }

@@ -8,9 +8,9 @@
     </form>
   </div>
   <div class="header__column3">
-    <% if(user){ %>
+    <% if(loggedInUser){ %>
     <a href="/video/upload"><span class="header__right__span">Upload</span></a>
-    <a href="/user/<%=user.id%>"
+    <a href="/user/<%=loggedInUser.id%>"
       ><span class="header__right__span">Profile</span></a
     >
     <a href="/logout"><span class="header__right__span">Logout</span></a
