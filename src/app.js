@@ -6,6 +6,8 @@ import cookieParser from "cookie-parser";
 import Router from "./routes/index";
 import passport from "passport";
 import session from "express-session";
+import MongoStore from "connect-mongo";
+import mongoose from "mongoose";
 import { localVariables } from "./middlewares";
 import dotenv from "dotenv";
 dotenv.config();
@@ -13,6 +15,7 @@ import "./passport";
 
 const jsonParser = bodyParser.json();
 const urlencodedParser = bodyParser.urlencoded({ extended: true });
+const CookieStore = MongoStore(session);
 
 const app = express();
 
@@ -30,7 +33,7 @@ app.use(
     secret: process.env.SESSION_SECRET_KEY,
     resave: true,
     saveUninitialized: false,
-    cookie: {}
+    store: new CookieStore({ mongooseConnection: mongoose.connection })
   })
 );
 app.use(passport.initialize());
