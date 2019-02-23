@@ -14,6 +14,11 @@ import {
   gitHubLogin2,
   gitHubLogin2CallBack
 } from "../controllers/user/githubLogin";
+import {
+  getFacebookLogin,
+  getFacebookLoginCallback,
+  getFacebookLoginCallback2
+} from "../controllers/user/facebookLogin";
 
 const globalRouter = express.Router();
 
@@ -36,5 +41,12 @@ globalRouter.get(routes.search, search);
 
 globalRouter.get(routes.gitHub, gitHubLogin);
 globalRouter.get(routes.gitHubCallback, gitHubLogin2, gitHubLogin2CallBack);
+
+globalRouter.get(routes.facebook, getFacebookLogin);
+globalRouter.get(
+  routes.facebookCallback,
+  getFacebookLoginCallback,
+  getFacebookLoginCallback2
+);
 
 export default globalRouter;
